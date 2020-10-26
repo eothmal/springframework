@@ -36,10 +36,10 @@ Configuring Spring Bean via Constructor Injection
 Inner and Outer Beans  
 Setting Init and Destroy Method on Beans  
   
-Autowiring byType
-AutoWiring byName
-Autowiring byConstructor
-Default Autowiring
+Autowiring byType  
+AutoWiring byName  
+Autowiring byConstructor  
+Default Autowiring  
 
   
 
