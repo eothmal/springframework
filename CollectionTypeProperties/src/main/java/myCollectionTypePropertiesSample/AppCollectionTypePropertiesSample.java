@@ -7,25 +7,27 @@ public class AppCollectionTypePropertiesSample {
 
 	public static void main(String[] args) {
 		ApplicationContext appCtx = new ClassPathXmlApplicationContext("conf/beans/AppBean.xml");
-		
-		Motorcycle motor = appCtx.getBean("motor", Motorcycle.class);
-		
-		System.out.println(motor);
-		
-		Motorcycle motorwithproperty = (Motorcycle) appCtx.getBean("motorwithproperty");
-		
-		System.out.println(motorwithproperty);
-		
-		Car car = appCtx.getBean("car", Car.class);
-		
-		System.out.println(car);
-		
-	Car carwithcollection = appCtx.getBean("carwithcollection", Car.class);
-		
-		System.out.println(carwithcollection);
 
+		Motorcycle motor = appCtx.getBean("motor", Motorcycle.class);
+
+		System.out.println(motor);
+
+		Motorcycle motorwithproperty = (Motorcycle) appCtx.getBean("motorwithproperty");
+
+		System.out.println(motorwithproperty);
+
+		Car car = appCtx.getBean("car", Car.class);
+
+		System.out.println(car);
+
+		Car carwithcollection = appCtx.getBean("carwithcollection", Car.class);
+
+		System.out.println(carwithcollection);
 		
-		
-		
-	}                               
+		Car carwithutilcollection = appCtx.getBean("carwithutilcollection", Car.class);
+
+		System.out.println(carwithutilcollection);
+
+
+	}
 }

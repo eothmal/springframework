@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:util="http://www.springframework.org/schema/util"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans 
+                        http://www.springframework.org/schema/beans/spring-beans.xsd
+           http://www.springframework.org/schema/util 
+           http://www.springframework.org/schema/util/spring-util.xsd">
+
+
+	<bean id="carwithutilcollection"
+		class="myCollectionTypePropertiesSample.Car">
+		<property name="brands" ref="brandList" />
+		<property name="brandMadeMap" ref="brandMade" />
+	</bean>
+
+	<util:list id="brandList" value-type="java.lang.String">
+		<value>Audi</value>
+		<value>Buick</value>
+		<value>Corolla</value>
+	</util:list>
+
+	<util:map id="brandMade" map-class="java.util.HashMap">
+		<entry key="Audi" value="German" />
+		<entry key="Buick" value="USA" />
+		<entry key="Corolla" value="Japan" />
+	</util:map>
+
+
+</beans>

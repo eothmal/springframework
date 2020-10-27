@@ -15,7 +15,7 @@ public class Car {
 	}
 	@Override
 	public String toString() {
-		return "Car [brands=" + (brands !=null? brands:"[]")  + ", brandMadeMap=" + (brandMadeMap != null?  brandMadeMap: "[]") + "]";
+		return "Car [brands=" + (brands !=null? brands:"[]")  + ", brandMadeMap=" + (brandMadeMap != null?  brandMadeMap: "{}") + "]";
 	}
 	
 	

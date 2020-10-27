@@ -3,30 +3,36 @@
 	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://www.springframework.org/schema/beans 
     http://www.springframework.org/schema/beans/spring-beans.xsd">
-    
-    <bean id="motor" class="myCollectionTypePropertiesSample.Motorcycle" />
-    
-    <bean id="motorwithproperty" class="myCollectionTypePropertiesSample.Motorcycle" >
-    <property name="name" value="Harley" />
-    </bean>
-    
-    <bean id="car" class="myCollectionTypePropertiesSample.Car" />
-    
-    <bean id="carwithcollection" class="myCollectionTypePropertiesSample.Car" >
-    <property name="brands">
-    <list>
-    <value>Acura</value>
-     <value>BMW</value>
-      <value>Chevrolet</value>
-    </list>
-    </property>    
-    <property name="brandMadeMap">
-    <map>
-    <entry key="Acura" value="Jepan"/>
-    <entry key="BMW" value="German"/>
-    <entry key="Chevrolet" value="USA"/>
-    </map>
-    </property>
-    </bean>
+
+	<import resource="appUtilBean.xml" />
+
+	<bean id="motor"
+		class="myCollectionTypePropertiesSample.Motorcycle" />
+
+	<bean id="motorwithproperty"
+		class="myCollectionTypePropertiesSample.Motorcycle">
+		<property name="name" value="Harley" />
+	</bean>
+
+	<bean id="car" class="myCollectionTypePropertiesSample.Car" />
+
+	<bean id="carwithcollection"
+		class="myCollectionTypePropertiesSample.Car">
+		<property name="brands">
+			<list>
+				<value>Acura</value>
+				<value>BMW</value>
+				<value>Chevrolet</value>
+			</list>
+		</property>
+		
+		<property name="brandMadeMap">
+			<map>
+				<entry key="Acura" value="Japan" />
+				<entry key="BMW" value="German" />
+				<entry key="Chevrolet" value="USA" />
+			</map>
+		</property>
+	</bean>
 
 </beans>
