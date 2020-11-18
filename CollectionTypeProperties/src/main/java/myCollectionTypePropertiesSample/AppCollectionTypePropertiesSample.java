@@ -26,7 +26,7 @@ public class AppCollectionTypePropertiesSample {
 		
 		Car carwithutilcollection = appCtx.getBean("carwithutilcollection", Car.class);
 
-		System.out.println(carwithutilcollection);
+		System.out.println(carwithutilcollection );
 
 
 	}
